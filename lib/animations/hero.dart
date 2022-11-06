@@ -15,13 +15,13 @@ class _HeroAnState extends State<HeroAn> {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Row(children: [
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           Hero(
             tag: "1",
             child: FadeInImage.memoryNetwork(
                 fadeInDuration: const Duration(seconds: 3),
                 placeholder: kTransparentImage,
-                width: 100,
+                width: 150,
                 image:
                     'http://img-fotki.yandex.ru/get/6442/16969765.eb/0_6f7ea_35b34dd8_M.png'),
           ),
@@ -34,7 +34,7 @@ class _HeroAnState extends State<HeroAn> {
                 ),
               );
             },
-            child: Text('Show me BIGGER winnie'),
+            child: Text('Show me BIGGER pic'),
           ),
         ]),
       ),

@@ -26,6 +26,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(children: [
             SizedBox(height: 20),
             Rotate(),
+            SizedBox(height: 20),
             HeroAn(),
           ]),
         ),

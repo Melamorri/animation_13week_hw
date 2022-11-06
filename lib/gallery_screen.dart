@@ -15,7 +15,12 @@ class GalleryScreen extends StatelessWidget {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-      body: Center(),
+      body: Center(
+        child: Hero(
+            tag: '1',
+            child: Image.network(
+                'http://img-fotki.yandex.ru/get/6442/16969765.eb/0_6f7ea_35b34dd8_M.png')),
+      ),
     );
   }
 }
