@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:animation_13week/sections/simple_section.dart';
-import 'package:animation_13week/sections/manual_section.dart';
-import 'package:animation_13week/sections/builder_section.dart';
 import 'package:animation_13week/sections/container_section.dart';
 import 'animations/rotate.dart';
+import 'animations/hero.dart';
 
 void main() {
   runApp(const HomeScreen());
@@ -28,6 +26,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(children: [
             SizedBox(height: 20),
             Rotate(),
+            HeroAn(),
           ]),
         ),
       ),

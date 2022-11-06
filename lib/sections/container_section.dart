@@ -41,7 +41,7 @@ class _ContainerSectionState extends State<ContainerSection> {
                       context,
                       MaterialPageRoute(
                         builder: (context) => GalleryScreen(
-                          widget.imageUrls,
+                          // widget.imageUrls,
                           heroTag: 'rabbit hero',
                         ),
                       ),

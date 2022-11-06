@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:transparent_image/transparent_image.dart';
 
 class Rotate extends StatefulWidget {
   const Rotate({super.key});
@@ -32,10 +33,15 @@ class _RotateState extends State<Rotate> with SingleTickerProviderStateMixin {
       builder: (context, child) {
         return Transform.rotate(
           angle: _controller.value * 2 * pi,
-          child: Image.asset(
-            'assets/images/poohhoney.png',
-            width: 200,
-          ),
+          child: FadeInImage.memoryNetwork(
+              fadeInDuration: const Duration(seconds: 3),
+              placeholder: kTransparentImage,
+              width: 250,
+              image: 'https://pngicon.ru/file/uploads/vinni-pukh-v-png.png'),
+          // Image.asset(
+          //   'assets/images/poohhoney.png',
+          //   width: 200,
+          // ),
         );
       },
     );
