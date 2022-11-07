@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:animation_13week/sections/container_section.dart';
 import 'animations/rotate.dart';
 import 'animations/hero.dart';
+import 'package:page_transition/page_transition.dart';
+import 'animations/pagetransition.dart';
 
 void main() {
   runApp(const HomeScreen());
@@ -28,6 +30,7 @@ class HomeScreen extends StatelessWidget {
             Rotate(),
             SizedBox(height: 20),
             HeroAn(),
+            PageTransitionAn()
           ]),
         ),
       ),
